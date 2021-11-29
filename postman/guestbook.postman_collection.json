@@ -1,124 +1,102 @@
 {
-	"info": {
-		"_postman_id": "350c9d70-0abe-4eb2-8e5e-43d1fa5324fa",
-		"name": "guestbook",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "delete one signature",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4000/signatures/9",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"signatures",
-						"9"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get sigs",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4000/signatures",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"signatures"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get one signature by id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4000/signatures/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"signatures",
-						"8"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST signature",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"name\": \"Grace Hopper\"}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:4000/signatures",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"signatures"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST signature with message",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\"name\": \"Margaret Hamilton\", \"message\": \"Hello from NASA!\"}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:4000/signatures",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4000",
-					"path": [
-						"signatures"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "350c9d70-0abe-4eb2-8e5e-43d1fa5324fa",
+    "name": "guestbook",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "delete one signature",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/signatures/9",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["signatures", "9"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get sigs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/signatures",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["signatures"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get one signature by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/signatures/8",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["signatures", "8"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST signature",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Grace Hopper\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/signatures",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["signatures"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST signature with message",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Margaret Hamilton\", \"message\": \"Hello from NASA!\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/signatures",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["signatures"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
