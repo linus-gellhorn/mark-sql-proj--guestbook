@@ -40,9 +40,14 @@ app.get("/signatures/:id", async (req, res) => {
   //  see documentation: https://expressjs.com/en/guide/routing.html
   const id = parseInt(req.params.id); // params are always string type
 
+  // const signature = (
+  //   await client.query(`SELECT * FROM signatures WHERE id = $1`, [id])
+  // ).rows; // FIXED! FIXME-TASK get the signature row from the db (match on id)
+
+  // DODGY CODE SUSCEPTIBLE TO SQL ATTACKS
   const signature = (
-    await client.query(`SELECT * FROM signatures WHERE id = $1`, [id])
-  ).rows; // FIXED! FIXME-TASK get the signature row from the db (match on id)
+    await client.query(`SELECT * FROM signatures WHERE id = ${id}`)
+  ).rows;
 
   if (signature.length > 0) {
     res.status(200).json({

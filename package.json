@@ -2,8 +2,9 @@
   "name": "mark-sql-proj--guestbook",
   "version": "0.0.1",
   "scripts": {
-    "start": "ts-node src",
-    "start:dev": "ts-node-dev src"
+    "start": "node dist",
+    "start:dev": "ts-node-dev src",
+    "build": "tsc"
   },
   "author": "",
   "license": "CC-BY-NC-ND-4.0",
